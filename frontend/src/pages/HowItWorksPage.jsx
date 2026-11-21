@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  MapPin,
-  Clock,
   IndianRupee,
   QrCode,
   ShieldCheck,
@@ -13,37 +11,6 @@ import {
 } from 'lucide-react';
 import MainLayout from '../layouts/MainLayout';
 import ParkingAnimatedHeading from '../components/ParkingAnimatedHeading';
-
-const STEPS = [
-  {
-    step: '01',
-    icon: MapPin,
-    title: 'Discover Verified Parking',
-    description:
-      'Enable GPS or search any town, temple, or beach in Kanyakumari District to view admin-verified parking facilities.',
-  },
-  {
-    step: '02',
-    icon: Clock,
-    title: 'Choose Vehicle, Slot & Time',
-    description:
-      'Pick Two Wheeler, Four Wheeler, or Truck, choose an open slot from the live bay map, and review the transparent INR (₹) price.',
-  },
-  {
-    step: '03',
-    icon: IndianRupee,
-    title: 'Pay Securely in INR (₹)',
-    description:
-      'Complete payment via Razorpay with UPI, cards, or net banking while our backend locks your slot against double-booking.',
-  },
-  {
-    step: '04',
-    icon: QrCode,
-    title: 'Navigate & Scan QR Pass',
-    description:
-      'Use one-tap Google Maps navigation on your digital boarding pass and scan your unique QR code at the parking gate.',
-  },
-];
 
 const BENEFITS = [
   {
@@ -87,9 +54,9 @@ export default function HowItWorksPage() {
           style={{ backgroundImage: "url('/kanyakumari-bg.jpg?v=2')" }}
           aria-hidden="true"
         />
-        <div className="section-container relative z-10 text-center [text-shadow:0_2px_10px_rgba(0,0,0,0.65)]">
-          <span className="rounded-full bg-white/15 px-3.5 py-1 text-xs font-semibold text-amber-200 backdrop-blur-sm">
-            4 Simple Steps
+        <div className="section-container relative z-10 text-center">
+          <span className="rounded-full bg-[#073B5C]/90 px-3.5 py-1 text-xs font-semibold text-sky-100 border border-[#087CA7]/70">
+            Smart District Parking
           </span>
           <div className="mt-3">
             <ParkingAnimatedHeading
@@ -100,7 +67,7 @@ export default function HowItWorksPage() {
               size="page"
             />
           </div>
-          <p className="mx-auto mt-2 max-w-2xl text-sm text-sky-100/90">
+          <p className="mx-auto mt-3 max-w-2xl rounded-xl bg-[#073B5C]/75 px-4 py-2 text-sm text-sky-100">
             Reserve your parking slot before reaching Kanyakumari Beach, Vivekananda Rock Ferry,
             Padmanabhapuram Palace, or Nagercoil Town.
           </p>
@@ -108,32 +75,7 @@ export default function HowItWorksPage() {
       </section>
 
       <section className="section-container py-14">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {STEPS.map((item) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={item.step}
-                className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-card dark:border-sky-900/50 dark:bg-[#102A43]"
-              >
-                <span className="font-heading text-4xl font-extrabold text-[#087CA7]/20">
-                  {item.step}
-                </span>
-                <div className="mt-2 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#073B5C] to-[#087CA7] text-white shadow-md">
-                  <Icon className="h-6 w-6" />
-                </div>
-                <h2 className="mt-4 font-heading text-base font-bold text-[#102A43] dark:text-white">
-                  {item.title}
-                </h2>
-                <p className="mt-2 text-xs leading-relaxed text-slate-600 dark:text-slate-300">
-                  {item.description}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="mt-14">
+        <div>
           <h2 className="text-center font-heading text-2xl font-bold text-[#073B5C] dark:text-white">
             Why Choose Kumari Parking?
           </h2>
