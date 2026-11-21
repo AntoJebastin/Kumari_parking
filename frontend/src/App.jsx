@@ -49,6 +49,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/explore" element={<ExploreParkingPage />} />
               <Route path="/nearest" element={<NearestMapPage />} />
+              <Route path="/why-choose-us" element={<HowItWorksPage />} />
               <Route path="/how-it-works" element={<HowItWorksPage />} />
               <Route path="/faq" element={<FaqPage />} />
               <Route path="/contact" element={<ContactPage />} />

@@ -60,9 +60,8 @@ export default function HowItWorksPage() {
           </span>
           <div className="mt-3">
             <ParkingAnimatedHeading
-              prefix="How"
+              prefix="Why Choose"
               highlight="Kumari Parking"
-              suffix="Works"
               align="center"
               size="page"
             />

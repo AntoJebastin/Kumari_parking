@@ -40,8 +40,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/how-it-works" className="transition hover:text-[#F59E0B]">
-                  How It Works
+                <Link to="/why-choose-us" className="transition hover:text-[#F59E0B]">
+                  Why Choose Us
                 </Link>
               </li>
               <li>

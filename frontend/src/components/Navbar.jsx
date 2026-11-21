@@ -21,7 +21,7 @@ const NAV_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'Explore Parking', to: '/explore' },
   { label: 'Nearest Map', to: '/nearest' },
-  { label: 'How It Works', to: '/how-it-works' },
+  { label: 'Why Choose Us', to: '/why-choose-us' },
   { label: 'FAQ', to: '/faq' },
   { label: 'Contact', to: '/contact' },
 ];
